@@ -1,0 +1,1247 @@
+@import 'base/base';
+@import 'base/mixin';
+@import 'base/fonts';
+@import 'base/variables';
+
+#blur {
+    background-color: rgba(0, 0, 0, 0.315);
+}
+
+.head_img {
+    width: 100%;
+    height: 700px;
+    padding-top: 1px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%),url(../image/Bitmap.png);
+    mix-blend-mode: normal;
+    background-size: 100% 100%;
+    background-position: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+   
+
+    .flex_space-btw {
+        margin: 45px auto 0;
+        width: 901px;
+        @include justFlex (row, nowrap, space-between, center);
+
+        .dreams-left {
+            width: 152px;
+            height: 24px;
+            @include fonts-style ($font_montserrat, normal, bold, 20px, 24px, $header_text);
+        }
+
+        .menu-right {
+            width: 180px;
+
+            .nav {
+                @include justFlex (row, nowrap, space-between, center);
+
+
+                .link-logIn {
+                    display: block;
+                    width: 90px;
+                    height: 36px;
+                    text-align: center;
+                    text-decoration: none;
+                    @include fonts-style ($font_montserrat, normal, normal, 14px, 36px, $header_text);
+
+                }
+
+                .link-signUp {
+                    @extend .link-logIn;
+                }
+
+                .border-btn {
+                    border: 2px solid #FFFFFF;
+                    border-radius: 40px;
+
+                }
+            }
+        }
+
+
+    }
+
+    .header-title {
+        display: block;
+        width: 472px;
+        height: 126px;
+        margin: 147.5px auto 0;
+        text-align: center;
+        @include fonts-style ($font_montserrat_bold, normal, bold, 53px, 63px, $header_text);
+
+    }
+
+    .smaller-ttl {
+        display: block;
+        width: 396px;
+        height: 25px;
+        text-align: center;
+        margin: 28.5px auto 0;
+        @include fonts-style ($font_roboto, normal, 600, 24px, 24px, #F7F3F2);
+
+    }
+
+    .button-pink {
+        display: block;
+        margin: 33px auto 0;
+        width: 225px;
+        height: 40px;
+        background-color: $badges_color;
+        border-radius: 40px;
+        text-align: center;
+        text-decoration: none;
+        @include fonts-style ($font_montserrat, normal, bold, 14px, 40px, $header_text);
+
+    }
+
+
+
+}
+
+
+.content_center {
+    width: 940px;
+    margin: 0 auto;
+
+    .caption {
+        text-align: center;
+        height: 32px;
+        @include fonts-style ($font_montserrat, normal, bold, 28px, 32px, $textBlack);
+
+
+    }
+
+    .block_how-works {
+        width: 940px;
+        height: 461px;
+        margin-top: 95px;
+
+
+
+        .three_img_flex {
+            width: 940px;
+            height: 400px;
+            margin-top: 35px;
+            @include justFlex (row, nowrap, space-between, center);
+
+            .left_img {
+                width: 300px;
+                height: 400px;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/laptop.png);
+                border-radius: 4px;
+            }
+
+            .center_img {
+                @extend .left_img;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/car.png);
+
+            }
+
+            .right_img {
+                @extend .left_img;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/beach.png);
+
+            }
+
+            .mg-25 {
+                width: 250px;
+                margin: 0 auto;
+
+                .step {
+                    width: 70px;
+                    height: 20px;
+                    border-radius: 40px;
+                    background-color: $badges_color;
+                    @include fonts-style ($font_montserrat, normal, normal, 10px, 24px, $img_text);
+                    letter-spacing: 2px;
+                    text-align: center;
+                    margin-top: 219px;
+
+
+                }
+
+                .big-text {
+                    width: 250px;
+                    height: 58px;
+                    display: block;
+                    @include fonts-style ($font_montserrat, normal, bold, 24px, 26px, $img_text);
+                    margin-top: 15px;
+                    display: flex;
+                    align-items: flex-end;
+                }
+
+                .small-text {
+                    width: 250px;
+                    height: 57px;
+                    @include fonts-style ($font_roboto, normal, 300, 14px, 14px, #e3e3e3);
+                    margin-top: 10px;
+                    display: flex;
+                    align-items: flex-end;
+
+                }
+
+                .center-mg-step {
+                    margin-top: 250px;
+                }
+
+                .center-mg-big {
+                    width: 250px;
+                    height: 29px;
+                    @include fonts-style ($font_montserrat, normal, bold, 24px, 14px, $img_text);
+                    margin-top: 14px;
+
+
+                }
+
+
+            }
+
+        }
+    }
+
+    .partners-block {
+        width: 940px;
+        height: 361px;
+        margin-top: 95px;
+
+        .four_partners_flex {
+            width: 940px;
+
+            @include justFlex (row, nowrap, space-between, flex-start);
+            margin-top: 35px;
+
+            .partner-box {
+                width: 221px;
+                height: 205px;
+            }
+
+            .partner-box-biger {
+                height: 225px;
+            }
+
+
+            .avatar1 {
+                width: 120px;
+                height: 120px;
+                background: url(../image/avatar1.png), #D8D8D8;
+                border-radius: 60px;
+                margin: 0 auto;
+                @include justFlex (row, nowrap, flex-end, flex-end);
+                position: relative;
+
+                .pink-music {
+                    width: 32px;
+                    height: 32px;
+                    background-color: #FF4E50;
+                    border-radius: 50%;
+                    border: 4px solid rgb(255, 255, 255);
+                    right: -4px;
+                    bottom: -4px;
+                    position: absolute;
+                    @include justFlex (row, nowrap, center, center);
+
+                }
+
+            }
+
+            .avatar2 {
+                @extend .avatar1;
+                background: url(../image/avatar2.png), #D8D8D8;
+
+                .green-paint {
+                    @extend .pink-music;
+                    background-color: #19D4CA;
+                }
+            }
+
+            .avatar3 {
+
+                @extend .avatar1;
+                background: url(../image/avatar3.png), #D8D8D8;
+                // margin-top: 10px;
+
+                .orange-camera {
+                    @extend .pink-music;
+                    background-color: #FFA710;
+                }
+            }
+
+            .avatar4 {
+                @extend .avatar1;
+                background: url(../image/avatar4.png), #D8D8D8;
+                // margin-top: 10px;
+
+                .blue-plane {
+                    @extend .pink-music;
+                    background-color: #667DF3;
+
+                    .icon-plane {
+                        margin-left: 2px;
+                    }
+                }
+            }
+
+            .avatars_name {
+                width: 100%;
+                height: 18px;
+                @include fonts-style ($font_montserrat_bold, normal, bold, 14px, 17px, $ava-name-color);
+                @include justFlex (row, nowrap, center, flex-end);
+                margin-top: 17px;
+
+
+            }
+
+            .about_yourself {
+                width: 100%;
+                height: 38px;
+                margin-top: 12px;
+                @include fonts-style ($font_roboto, normal, 500, 14px, 14px, $ava-about-color);
+                @include justFlex (row, nowrap, center, flex-end);
+                text-align: center;
+
+
+            }
+
+            .about_yourself-highter {
+                @extend .about_yourself;
+                height: 57px;
+                text-align: center;
+                @include justFlex (row, wrap, center, flex-end);
+
+
+            }
+        }
+
+        .see-other {
+            display: block;
+            width: 180px;
+            height: 40px;
+            border: 2px solid $badges_color;
+            box-sizing: border-box;
+            border-radius: 40px;
+            margin: 36px auto 0;
+            @include fonts-style ($font_montserrat_bold, normal, 500, 14px, 40px, $badges_color);
+            text-decoration: none;
+            text-align: center;
+
+
+        }
+    }
+
+    .discover-some-img {
+        width: 940px;
+        height: 1031px;
+        margin-top: 95px;
+
+        .three-column-block {
+            width: 940px;
+            height: 970px;
+            margin-top: 35px;
+            @include justFlex (column, wrap, space-between, center);
+
+            .top-block {
+                width: 940px;
+                height: 310px;
+                @include justFlex (row, wrap, space-between, center);
+
+            }
+
+            .center-block {
+                @extend .top-block;
+
+
+            }
+
+            .bottom-block {
+                @extend .top-block;
+
+
+            }
+        }
+
+        .img-top-1 {
+            width: 300px;
+            height: 310px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.185) 0%, rgba(3, 3, 3, 0.219) 100%), url(../image/sports.png);
+            background-size: cover;
+            border-radius: 4px;
+            @include justFlex (row, wrap, center, center);
+
+        }
+
+        .img-top-2 {
+            @extend .img-top-1;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/het.png);
+
+        }
+
+        .img-top-3 {
+            @extend .img-top-1;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/extream.png);
+
+        }
+
+        .text-into {
+            display: block;
+            height: 27px;
+            @include fonts-style ($font_montserrat_bold, normal, bold, 22px, 27px, $text-into-img);
+
+        }
+
+        .text-into2 {
+            width: 187px;
+            height: 54px;
+            text-align: center;
+        }
+
+        .img-center-1 {
+            width: 300px;
+            height: 310px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/games.png);
+            background-size: cover;
+            border-radius: 4px;
+            @include justFlex (row, wrap, center, center);
+        }
+
+        .img-center-2 {
+            @extend .img-center-1;
+            width: 620px;
+            height: 310px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/culture.png);
+
+        }
+
+        .img-bottom-1 {
+            width: 620px;
+            height: 310px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/massage.png);
+            background-size: cover;
+            border-radius: 4px;
+            @include justFlex (row, wrap, center, center);
+        }
+
+        .img-bottom-2 {
+            @extend .img-bottom-1;
+            width: 300px;
+            height: 310px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/we.png);
+
+        }
+    }
+
+    .some-form {
+        width: 482px;
+        height: 158px;
+        margin: 95px auto;
+
+        .interests {
+            display: block;
+            margin-top: 43px;
+            width: 482px;
+            height: 93px;
+
+            .grey-text {
+
+                width: 415px;
+
+                height: 24px;
+                @include fonts-style ($font_roboto, normal, bold, 18px, 14px, $ava-about-color);
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                margin: 0 auto;
+
+            }
+
+            .flex-for-form {
+                width: 482px;
+                height: 40px;
+                @include justFlex (row, wrap, space-between, center);
+                margin-top: 25px;
+
+                .just-input {
+                    width: 299px;
+                    height: 40px;
+                    border: 1px solid #D4D4D4;
+                    box-sizing: border-box;
+                    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+                    border-radius: 3px;
+                    padding-left: 14.63px;
+                    @include fonts-style ($font_roboto, normal, bold, 14px, 40px, #999999);
+
+                }
+
+                .btn {
+                    width: 172.12px;
+                    height: 40px;
+                    border-radius: 40px;
+                    background-color: $badges_color;
+                    border: none;
+                    outline: none;
+                    @include fonts-style ($font_montserrat_bold, normal, normal, 14px, 40px, $btn-text);
+                    cursor: pointer;
+
+                }
+            }
+        }
+    }
+}
+
+.end {
+    width: 100%;
+    height: 224px;
+    border-top: 2px solid $badges_color;
+    margin: 81px auto 36px;
+
+    .flex-footer {
+        width: 944px;
+        margin: 0 auto;
+        @include justFlex (row, wrap, flex-start, flex-start);
+
+    }
+
+    .dreamsHare {
+        margin-top: 36px;
+        width: 119px;
+        height: 20px;
+        @include fonts-style ($font_montserrat, normal, normal, 16px, 20px, $badges_color);
+
+    }
+
+    .company-footer {
+        margin: 38px 125px 0 122px;
+    }
+
+    .title-company {
+        height: 17px;
+        @include fonts-style ($font_montserrat-bold, normal, bold, 14px, 17px, $textBlack);
+        margin-bottom: 11px;
+
+    }
+
+    .company_items {
+        height: 26px;
+        @include fonts-style ($font_roboto, normal, bold, 14px, 26px, $li-color);
+
+    }
+
+    .title-partners {
+        @extend .title-company;
+        margin-top: 38px;
+        margin-right: 284px;
+    }
+
+    .designed {
+        width: 116px;
+        margin-top: 38px;
+
+        .des-by {
+            height: 12px;
+            @include fonts-style ($font_montserrat-bold, normal, bold, 10px, 12px, #cccccc);
+            letter-spacing: 1px;
+            text-align: right;
+
+        }
+
+        .img-des {
+            margin: 7px auto 0;
+            width: 110px;
+            height: 24px;
+
+            background-image: url(../image/sed.png);
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .head_img {
+        width: 100%;
+        height: 700px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/Bitmap2.png);
+
+        // background-image: url(/image/Bitmap2.png);
+        // background-color: brown;
+        background-size: cover;
+        background-position: center;
+
+        .flex_space-btw {
+            width: 671px;
+        }
+
+        .header-title {
+            margin-top: 153.5px;
+        }
+    }
+
+    .content_center {
+        width: 748px;
+
+        .caption {
+            height: 27px;
+            @include fonts-style ($font_montserrat, normal, bold, 22px, 27px, $textBlack);
+
+        }
+
+        .block_how-works {
+            width: 748px;
+
+            .three_img_flex {
+                width: 748px;
+
+                .left_img {
+                    width: 236px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/laptop2.png);
+                }
+
+                .center_img {
+                    width: 236px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/car2.png);
+
+                }
+
+                .right_img {
+                    width: 236px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/beach2.png);
+
+                }
+
+                .mg-25 {
+                    width: 196px;
+
+                    .step {
+                        margin-top: 205px;
+                    }
+
+                    .big-text {
+                        width: 196px;
+                        height: 58px;
+                        display: block;
+                        @include fonts-style ($font_montserrat, normal, bold, 24px, 14px, $img_text);
+                        margin-top: 15px;
+                        display: flex;
+                        align-items: flex-end;
+                    }
+
+                    .small-text {
+                        width: 196px;
+                        height: 76px;
+                        @include fonts-style ($font_roboto, normal, 300, 14px, 14px, #e3e3e3);
+                        margin-top: 10px;
+                        display: flex;
+                        align-items: flex-end;
+
+                    }
+
+                    .center-mg-step {
+                        margin-top: 255px;
+                    }
+
+                    .center-mg-big {
+                        width: 196px;
+                        height: 30px;
+                        @include fonts-style ($font_montserrat, normal, bold, 24px, 14px, $img_text);
+                        margin-top: 14px;
+                    }
+
+                    .center-mg-small {
+                        width: 196px;
+                        height: 57px;
+                        margin-top: 9px;
+                        @include fonts-style ($font_roboto, normal, 300, 14px, 14px, #e3e3e3);
+
+
+                    }
+
+                }
+            }
+        }
+
+
+        .partners-block {
+            width: 492px;
+            height: 605px;
+            margin: 94px auto;
+
+            .four_partners_flex {
+                width: 492px;
+                height: 464px;
+                @include justFlex (column, wrap, space-between, flex-start);
+
+
+                .partner-box {
+                    width: 236px;
+                    height: 205px;
+                }
+
+                .partner-box-biger {
+                    height: 205px;
+                }
+
+                .partner-box-tablet {
+                    height: 225px;
+                }
+
+                .about_yourself-tablet {
+                    height: 38px;
+                }
+            }
+
+            .see-other {
+                margin: 40px auto 0;
+            }
+
+        }
+
+        .discover-some-img {
+            width: 748px;
+            height: 1031px;
+            margin: 94px auto 0;
+
+            .three-column-block {
+                width: 748px;
+
+                .top-block {
+                    width: 748px;
+                    height: 310px;
+                    @include justFlex (row, wrap, space-between, center);
+
+                }
+
+                .center-block {
+                    width: 748px;
+                    height: 310px;
+                    @include justFlex (row, wrap, space-between, center);
+
+
+
+
+                }
+
+                .bottom-block {
+                    width: 748px;
+                    height: 310px;
+                    @include justFlex (row, wrap, space-between, center);
+
+
+
+                }
+
+                .img-top-1 {
+                    width: 236px;
+
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.185) 0%, rgba(3, 3, 3, 0.219) 100%), url(../image/sports2.png);
+
+
+                }
+
+                .img-top-2 {
+                    width: 236px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/Healath2.png);
+
+                }
+
+                .img-top-3 {
+                    width: 236px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/extreme2.png);
+
+                }
+
+
+
+
+
+                .text-into {
+                    display: block;
+                    width: 200px;
+                    height: 54px;
+                    @include fonts-style ($font_montserrat_bold, normal, bold, 22px, 27px, $text-into-img);
+                    text-align: center;
+
+                }
+
+                .text-into2 {
+                    width: 187px;
+                    height: 54px;
+                    text-align: center;
+                }
+
+
+                .img-center-1 {
+                    width: 236px;
+                    height: 310px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/games2.png);
+                    background-size: cover;
+                    border-radius: 4px;
+                    @include justFlex (row, wrap, center, center);
+                }
+
+                .img-center-2 {
+                    width: 492px;
+                    height: 310px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/culture2.png);
+
+                }
+
+                .img-bottom-1 {
+                    width: 492px;
+                    height: 310px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/massage2.png);
+                    background-size: cover;
+                    border-radius: 4px;
+                    @include justFlex (row, wrap, center, center);
+                }
+
+                .img-bottom-2 {
+                    width: 236px;
+                    height: 310px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/we.png);
+
+                }
+
+
+            }
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+    }
+
+    .end {
+        margin: 100px auto 20px;
+
+        .flex-footer {
+            width: 692px;
+            margin: 0 auto;
+            @include justFlex (row, wrap, flex-start, flex-start);
+
+        }
+
+        .dreamsHare {
+            margin-top: 36px;
+            width: 119px;
+            height: 20px;
+            @include fonts-style ($font_montserrat, normal, normal, 16px, 20px, $badges_color);
+
+        }
+
+        .company-footer {
+            margin: 38px 108px 0 56px;
+        }
+
+
+
+
+
+        .title-partners {
+            margin-right: 115px;
+        }
+
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 765px) {
+    .head_img {
+        height: 540px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/Bitmap3.png);
+        background-size: 100% 100%;
+
+
+
+        .flex_space-btw {
+            margin: 20px auto;
+            width: 180px;
+            height: 157px;
+            display: flex;
+            flex-direction: column-reverse;
+
+
+        }
+
+        .header-title {
+            display: block;
+            width: 272px;
+            height: 74px;
+            margin: 26.5px auto 0;
+            @include fonts-style ($font_montserrat_bold, normal, bold, 30px, 37px, $header_text);
+
+        }
+
+        .smaller-ttl {
+            display: block;
+            width: 275px;
+            height: 49px;
+            text-align: center;
+            margin: 5px auto 0;
+            @include fonts-style ($font_roboto, normal, 600, 18px, 24px, #F7F3F2);
+
+        }
+
+        .button-pink {
+            margin: 15px auto 0;
+            width: 280px;
+        }
+
+
+
+    }
+
+    .content_center {
+        width: 300px;
+
+        .caption320-2 {
+            display: block;
+            width: 280px;
+            height: 54px;
+            margin: 0 auto;
+        }
+
+        .block_how-works {
+            width: 300px;
+            height: 781px;
+            margin-top: 35px;
+
+            .three_img_flex {
+                width: 300px;
+                height: 740px;
+                margin-top: 15px;
+                @include justFlex (column, nowrap, space-between, center);
+
+                .left_img {
+                    width: 300px;
+                    height: 240px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/laptop3.png);
+
+                }
+
+                .center_img {
+                    height: 240px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/car3.png);
+
+
+                }
+
+                .right_img {
+                    height: 240px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/beach3.png);
+
+                }
+
+                .mg-25 {
+                    width: 250px;
+                    margin: 0 auto;
+
+                    .step {
+                        margin-top: 64px;
+
+
+                    }
+
+                    .big-text {
+                        width: 250px;
+                        height: 58px;
+                        display: block;
+                        @include fonts-style ($font_montserrat, normal, bold, 24px, 14px, $img_text);
+                        margin-top: 15px;
+                        display: flex;
+                        align-items: flex-end;
+                    }
+
+                    .small-text {
+                        width: 250px;
+                        height: 57px;
+                        @include fonts-style ($font_roboto, normal, 300, 14px, 14px, #e3e3e3);
+                        margin-top: 10px;
+                        display: flex;
+                        align-items: flex-end;
+
+                    }
+
+                    .center-mg-step {
+                        margin-top: 95px;
+                    }
+
+                    .center-mg-big {
+                        width: 250px;
+                        height: 29px;
+                        @include fonts-style ($font_montserrat, normal, bold, 24px, 14px, $img_text);
+                        margin-top: 14px;
+
+
+                    }
+                }
+
+            }
+
+        }
+
+        .partners-block {
+            width: 300px;
+            height: 1030px;
+            margin: 38px auto 0;
+
+
+            .caption320 {
+                width: 280px;
+                height: 54px;
+                margin: 0 auto;
+            }
+
+            .four_partners_flex {
+
+                width: 300px;
+                height: 889px;
+                @include justFlex (column, nowrap, space-between, center);
+                margin-top: 12px;
+            }
+
+            .see-other {
+                width: 280px;
+            }
+        }
+
+        .discover-some-img {
+            width: 300px;
+            height: 983px;
+            margin-top: 37px;
+
+
+
+            .three-column-block {
+                width: 300px;
+                height: 900px;
+                margin-top: 33px;
+                @include justFlex (column, wrap, space-between, center);
+
+                .top-block {
+                    width: 300px;
+                    height: 380px;
+                    @include justFlex (column, nowrap, space-between, center);
+
+                }
+
+                .center-block {
+                    width: 300px;
+                    height: 250px;
+                    @include justFlex (column, nowrap, space-between, center);
+
+
+
+
+                }
+
+                .bottom-block {
+                    width: 300px;
+                    height: 250px;
+                    @include justFlex (column, nowrap, space-between, center);
+
+
+
+                }
+
+
+
+
+
+
+                .img-top-1 {
+                    width: 300px;
+                    height: 120px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.185) 0%, rgba(3, 3, 3, 0.219) 100%), url(../image/sports3.png);
+
+
+                }
+
+                .img-top-2 {
+                    width: 300px;
+                    height: 120px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/Healath3.png);
+
+                }
+
+                .img-top-3 {
+                    height: 120px;
+                    width: 300px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/extreme3.png);
+
+                }
+
+
+
+
+
+
+
+
+
+
+                .img-center-1 {
+                    height: 120px;
+                    width: 300px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/games3.png);
+
+                }
+
+                .img-center-2 {
+                    height: 120px;
+                    width: 300px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/culture3.png);
+
+                }
+
+                .img-bottom-1 {
+                    height: 120px;
+                    width: 300px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/massage3.png);
+
+                }
+
+                .img-bottom-2 {
+                    height: 120px;
+                    width: 300px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/we3.png);
+
+                }
+            }
+        }
+
+        .some-form {
+            width: 280px;
+            height: 192px;
+            margin: 35px auto;
+
+            .interests {
+
+                margin-top: 9px;
+                width: 280px;
+                height: 129px;
+
+                .grey-text {
+
+                    width: 280px;
+
+                    height: 24px;
+
+                    margin: 9px auto 0;
+
+                }
+
+                .flex-for-form {
+                    width: 280px;
+                    height: 90px;
+                    @include justFlex (column, wrap, space-between, center);
+                    margin-top: 15px;
+
+                    .just-input {
+                        width: 280px;
+                        height: 40px;
+                    }
+
+                    .btn {
+                        width: 280px;
+                        height: 40px;
+                    }
+                }
+
+            }
+
+
+
+
+        }
+
+    }
+
+    .end {
+        width: 100%;
+        height: 204px;
+        margin: 41px auto 22px;
+
+
+        .flex-footer {
+            width: 280px;
+            margin: 0 auto;
+            @include justFlex (column, wrap, center, flex-start);
+
+        }
+
+        .dreamsHare {
+            margin: 21px auto 0;
+
+        }
+
+        .company-footer {
+            width: 250px;
+            margin: 13px auto 0;
+            @include justFlex (row, wrap, center, flex-start);
+
+        }
+
+
+        // .company-footer {
+        //     margin: 38px 125px 0 122px;
+        // }
+
+        .title-company {
+            width: 100%;
+            text-align: center;
+            height: 17px;
+            @include fonts-style ($font_montserrat-bold, normal, bold, 14px, 17px, $textBlack);
+            margin-bottom: 0;
+
+        }
+
+        .company_items {
+            padding: 3px;
+            height: 26px;
+            @include fonts-style ($font_roboto, normal, bold, 14px, 26px, $li-color);
+
+        }
+
+
+        .partners-footer {
+            margin: 0 auto;
+        }
+
+        .title-partners {
+            width: 100%;
+            margin: 5px auto 0;
+
+        }
+
+        .designed {
+            width: 116px;
+            margin: 14px auto 0;
+
+            .des-by {
+                height: 12px;
+                @include fonts-style ($font_montserrat-bold, normal, bold, 10px, 12px, #cccccc);
+                letter-spacing: 1px;
+                text-align: center;
+
+            }
+
+            .img-des {
+                margin: 7px auto 0;
+                width: 110px;
+                height: 24px;
+
+                background-image: url(../image/sed.png);
+            }
+        }
+    }
+}
