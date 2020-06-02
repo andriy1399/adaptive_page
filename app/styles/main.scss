@@ -11,7 +11,7 @@
     width: 100%;
     height: 700px;
     padding-top: 1px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%),url(../image/Bitmap.png);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%),url(../img/Bitmap.png);
     mix-blend-mode: normal;
     background-size: 100% 100%;
     background-position: center;
@@ -128,19 +128,19 @@
             .left_img {
                 width: 300px;
                 height: 400px;
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/laptop.png);
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../img/laptop.png);
                 border-radius: 4px;
             }
 
             .center_img {
                 @extend .left_img;
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/car.png);
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../img/car.png);
 
             }
 
             .right_img {
                 @extend .left_img;
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/beach.png);
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../img/beach.png);
 
             }
 
@@ -224,7 +224,7 @@
             .avatar1 {
                 width: 120px;
                 height: 120px;
-                background: url(../image/avatar1.png), #D8D8D8;
+                background: url(../img/avatar1.png), #D8D8D8;
                 border-radius: 60px;
                 margin: 0 auto;
                 @include justFlex (row, nowrap, flex-end, flex-end);
@@ -247,7 +247,7 @@
 
             .avatar2 {
                 @extend .avatar1;
-                background: url(../image/avatar2.png), #D8D8D8;
+                background: url(../img/avatar2.png), #D8D8D8;
 
                 .green-paint {
                     @extend .pink-music;
@@ -258,7 +258,7 @@
             .avatar3 {
 
                 @extend .avatar1;
-                background: url(../image/avatar3.png), #D8D8D8;
+                background: url(../img/avatar3.png), #D8D8D8;
                 // margin-top: 10px;
 
                 .orange-camera {
@@ -269,7 +269,7 @@
 
             .avatar4 {
                 @extend .avatar1;
-                background: url(../image/avatar4.png), #D8D8D8;
+                background: url(../img/avatar4.png), #D8D8D8;
                 // margin-top: 10px;
 
                 .blue-plane {
@@ -363,7 +363,7 @@
         .img-top-1 {
             width: 300px;
             height: 310px;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.185) 0%, rgba(3, 3, 3, 0.219) 100%), url(../image/sports.png);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.185) 0%, rgba(3, 3, 3, 0.219) 100%), url(../img/sports.png);
             background-size: cover;
             border-radius: 4px;
             @include justFlex (row, wrap, center, center);
@@ -372,13 +372,13 @@
 
         .img-top-2 {
             @extend .img-top-1;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/het.png);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../img/het.png);
 
         }
 
         .img-top-3 {
             @extend .img-top-1;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/extream.png);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../img/extream.png);
 
         }
 
@@ -398,7 +398,7 @@
         .img-center-1 {
             width: 300px;
             height: 310px;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/games.png);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../img/games.png);
             background-size: cover;
             border-radius: 4px;
             @include justFlex (row, wrap, center, center);
@@ -408,14 +408,14 @@
             @extend .img-center-1;
             width: 620px;
             height: 310px;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/culture.png);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../img/culture.png);
 
         }
 
         .img-bottom-1 {
             width: 620px;
             height: 310px;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/massage.png);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../img/massage.png);
             background-size: cover;
             border-radius: 4px;
             @include justFlex (row, wrap, center, center);
@@ -425,7 +425,7 @@
             @extend .img-bottom-1;
             width: 300px;
             height: 310px;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/we.png);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../img/we.png);
 
         }
     }
@@ -549,7 +549,7 @@
             width: 110px;
             height: 24px;
 
-            background-image: url(../image/sed.png);
+            background-image: url(../img/sed.png);
         }
     }
 }
@@ -558,7 +558,7 @@
     .head_img {
         width: 100%;
         height: 700px;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/Bitmap2.png);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../img/Bitmap2.png);
 
         // background-image: url(/image/Bitmap2.png);
         // background-color: brown;
@@ -591,18 +591,18 @@
 
                 .left_img {
                     width: 236px;
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/laptop2.png);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../img/laptop2.png);
                 }
 
                 .center_img {
                     width: 236px;
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/car2.png);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../img/car2.png);
 
                 }
 
                 .right_img {
                     width: 236px;
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/beach2.png);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../img/beach2.png);
 
                 }
 
@@ -730,20 +730,20 @@
                 .img-top-1 {
                     width: 236px;
 
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.185) 0%, rgba(3, 3, 3, 0.219) 100%), url(../image/sports2.png);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.185) 0%, rgba(3, 3, 3, 0.219) 100%), url(../img/sports2.png);
 
 
                 }
 
                 .img-top-2 {
                     width: 236px;
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/Healath2.png);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../img/Healath2.png);
 
                 }
 
                 .img-top-3 {
                     width: 236px;
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/extreme2.png);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../img/extreme2.png);
 
                 }
 
@@ -770,7 +770,7 @@
                 .img-center-1 {
                     width: 236px;
                     height: 310px;
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/games2.png);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../img/games2.png);
                     background-size: cover;
                     border-radius: 4px;
                     @include justFlex (row, wrap, center, center);
@@ -779,14 +779,14 @@
                 .img-center-2 {
                     width: 492px;
                     height: 310px;
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/culture2.png);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../img/culture2.png);
 
                 }
 
                 .img-bottom-1 {
                     width: 492px;
                     height: 310px;
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/massage2.png);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../img/massage2.png);
                     background-size: cover;
                     border-radius: 4px;
                     @include justFlex (row, wrap, center, center);
@@ -795,7 +795,7 @@
                 .img-bottom-2 {
                     width: 236px;
                     height: 310px;
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/we.png);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../img/we.png);
 
                 }
 
@@ -857,7 +857,7 @@
 @media screen and (max-width: 765px) {
     .head_img {
         height: 540px;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/Bitmap3.png);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../img/Bitmap3.png);
         background-size: 100% 100%;
 
 
@@ -924,20 +924,20 @@
                 .left_img {
                     width: 300px;
                     height: 240px;
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/laptop3.png);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../img/laptop3.png);
 
                 }
 
                 .center_img {
                     height: 240px;
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/car3.png);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../img/car3.png);
 
 
                 }
 
                 .right_img {
                     height: 240px;
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../image/beach3.png);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%), url(../img/beach3.png);
 
                 }
 
@@ -1061,7 +1061,7 @@
                 .img-top-1 {
                     width: 300px;
                     height: 120px;
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.185) 0%, rgba(3, 3, 3, 0.219) 100%), url(../image/sports3.png);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.185) 0%, rgba(3, 3, 3, 0.219) 100%), url(../img/sports3.png);
 
 
                 }
@@ -1069,14 +1069,14 @@
                 .img-top-2 {
                     width: 300px;
                     height: 120px;
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/Healath3.png);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../img/Healath3.png);
 
                 }
 
                 .img-top-3 {
                     height: 120px;
                     width: 300px;
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/extreme3.png);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../img/extreme3.png);
 
                 }
 
@@ -1092,28 +1092,28 @@
                 .img-center-1 {
                     height: 120px;
                     width: 300px;
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/games3.png);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../img/games3.png);
 
                 }
 
                 .img-center-2 {
                     height: 120px;
                     width: 300px;
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/culture3.png);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../img/culture3.png);
 
                 }
 
                 .img-bottom-1 {
                     height: 120px;
                     width: 300px;
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/massage3.png);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../img/massage3.png);
 
                 }
 
                 .img-bottom-2 {
                     height: 120px;
                     width: 300px;
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../image/we3.png);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.158) 0%, rgba(3, 3, 3, 0.185) 100%), url(../img/we3.png);
 
                 }
             }
@@ -1240,7 +1240,7 @@
                 width: 110px;
                 height: 24px;
 
-                background-image: url(../image/sed.png);
+                background-image: url(../img/sed.png);
             }
         }
     }
